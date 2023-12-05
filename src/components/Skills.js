@@ -25,7 +25,7 @@ const Skills = () => {
   const ref = useRef(null);
   return (
 <>
-      <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">
+      <h2 className="w-full mt-64 font-bold text-center text-8xl md:text-6xl md:mt-32">
         Skills
       </h2> 
     <div
@@ -37,9 +37,7 @@ const Skills = () => {
       "
     >
    
-        <motion.div whileHover={{scale:1.05}} className="cursor-pointer flex rounded-full font-semibold bg-dark text-light p-8 shadow-dark
-        dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2
-        ">
+        <motion.div whileHover={{scale:1.05}} className="flex p-8 font-semibold rounded-full cursor-pointer bg-dark text-light shadow-dark dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2 ">
         Web
       </motion.div>
 
@@ -55,6 +53,10 @@ const Skills = () => {
           <Skill name="Figma" x="0vw" y="-20vw" />
           <Skill name="Firebase" x="-25vw" y="18vw" />
           <Skill name="Tawilwind CSS" x="28vw" y="18vw" />
+          <Skill name="Typescript" x="28vw" y="10vw" />
+
+          
+
     </div></>
   );
 };

@@ -19,7 +19,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3 className="text-2xl font-bold capitalize sm:text-xl xs:text-lg">
           {position}{" "}
           <a
             className="capitalize text-primary dark:text-primaryDark"
@@ -29,10 +29,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             @{company}
           </a>
         </h3>
-        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
+        <span className="font-medium capitalize text-dark/75 dark:text-light/50 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full md:text-sm"> {work}</p>
+        <p className="w-full font-medium md:text-sm"> {work}</p>
       </motion.div>
     </li>
   );
@@ -50,7 +50,7 @@ const Experience = () => {
   return (
 
       <div className="my-64">
-        <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+        <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">
           Experience
         </h2>
 
@@ -60,58 +60,50 @@ const Experience = () => {
             origin-top  dark:bg-primaryDark dark:shadow-3xl"
             style={{ scaleY: scrollYProgress }}
           />
-          <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-2">
             <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="https://google.com"
-              time="2022-Present"
-              address="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            />
-
-            <Details
-              position="Intern"
-              company="Facebook"
-              companyLink="https://facebook.com"
-              time="Summer 2021"
-              address="Menlo Park, CA."
-              work="Worked on a team responsible for developing a new mobile app
-              feature that allowed users to create and share short-form video
-              content, including designing and implementing a new user interface
-              and developing the backend infrastructure to support the feature."
-            />
-
-            <Details
-              position="Software Developer"
-              company="Amazon"
-              companyLink="https://amazon.com"
-              time="2020-2021"
-              address="Seattle, WA."
-              work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability."
+              position="Software Developer Co-op"
+              company="SignAgent"
+              time="Fall 2023"
+              address="Burlington,ON - Remote"
+              work="Worked on a team responsible for developing new features for SignAgent's Architecture platform, including creation of new features, optimizations and bug fixes."
             />
 
             <Details
               position="Software Developer Intern"
-              company="Microsoft"
-              companyLink="https://microsoft.com"
-              time="Summer 2019"
-              address="Redmond, WA."
-              work="Worked on a team responsible for developing new features for
-              Microsoft's Windows operating system, including implementing a new
-              user interface for a system settings panel and optimizing the
-              performance of a core system component."
+              company="Brandon Consulting"
+              // companyLink="https://facebook.com"
+              time="Summer 2022"
+              address="Remote"
+              work="Worked on a team responsible for developing a new job posting web app.
+               that allowed clients to apply to new jobs and employers to post jobs, including designing and implementing a  user interface
+              and developing the backend infrastructure to support the feature."
+            />
+
+            <Details
+              position="Software Developer Intern"
+              company="Manpasand Beverages"
+              // companyLink="https://amazon.com"
+              time="Summer 2021"
+              address="Vadodara, IN"
+              work="Worked on a team responsible for developing E-Commerce app, including implementing online store for products, supported in back-end development for payments and knowledge transfer to business team."
+            />
+
+            <Details
+              position="Web Co-ordinator"
+              company="Wilfrid Laurier University"
+              time="March 2022 - present"
+              address="Waterloo, ON"
+              work="Led a dynamic team of student developers in maintaining and enhancing university websites for various research institutes. Spearheaded initiatives to ensure the continuous functionality and up-to-date content of these websites, contributing to a seamless online presence for the university."
             />
 
             <Details
               position="Teaching Assistant"
-              company="MIT"
-              companyLink="https://mit.edu"
-              time="Fall 2018"
-              address="Massachusetts Ave, Cambridge, MA."
-              work="Assisted in teaching a course on computer programming, held office
-              hours to help students with assignments, and graded exams and
-              assignments."
+              company="Wilfrid Laurier University"
+              // companyLink="https://mit.edu"
+              time="September 2022 - Present"
+              address="Waterloo, ON"
+              work="Assisted in teaching  courses on intro computer programming, Data Structures and Algorithms, OOPS concepts and physics "
             />
           </ul>
         </div>
