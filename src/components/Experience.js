@@ -60,10 +60,18 @@ const Experience = () => {
             origin-top  dark:bg-primaryDark dark:shadow-3xl"
             style={{ scaleY: scrollYProgress }}
           />
+          <Details
+              position="Project Manager"
+              company="Self Justice"
+              time="December 2023"
+              address=" Remote"
+              work="Successfully led a web application project at Self Justice, streamlining development with tailored two-week cycles, directing a team of 7, and enhancing productivity through effective scrum sessions and individual mentorship."
+            />
+
           <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-2">
             <Details
               position="Software Developer Co-op"
-              company="SignAgent"
+              company="SignAgent"add
               time="Fall 2023"
               address="Burlington,ON - Remote"
               work="Worked on a team responsible for developing new features for SignAgent's Architecture platform, including creation of new features, optimizations and bug fixes."
