@@ -7,7 +7,7 @@ import {
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
-  PinterestIcon,
+  // PinterestIcon,
   SunIcon,
   TwitterIcon,
 } from "./Icons";
@@ -211,7 +211,7 @@ const Navbar = () => {
         >
           <LinkedInIcon />
         </motion.a>
-        <motion.a
+        {/* <motion.a
           target={"_blank"}
           className="w-6 m-1 mx-3 rounded-full bg-light sm:mx-1"
           href="#"
@@ -219,9 +219,9 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           aria-label="Checkout my pinterest profile"
         >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
+          <PinterestIcon /> */}
+        {/* </motion.a> */}
+        {/* <motion.a
           target={"_blank"}
           className="w-6 m-1 mx-3 sm:mx-1"
           href="#"
@@ -230,7 +230,7 @@ const Navbar = () => {
           aria-label="Checkout my dribbble profile"
         >
           <DribbbleIcon />
-        </motion.a>
+        </motion.a> */}
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
