@@ -11,6 +11,9 @@ import proj3 from "../../public/images/projects/images.jpeg";
 import proj4 from "../../public/images/projects/weather-app.png";
 import proj5 from "../../public/images/projects/cab-data.jpg";
 import proj6 from "../../public/images/projects/machine-learning.jpeg";
+import proj7 from "../../public/images/projects/stock-exchange.jpg";  
+import proj8 from "../../public/images/projects/forex.jpg";
+
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -172,12 +175,31 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
+              type="Web app"
+              title="Stock Exchange Application"
+              img={proj7}
+              link="https://github.com/dev7878/Stock-Trading-Application"
+              github="https://github.com/dev7878/Stock-Trading-Application"
+                
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
                 type="Featured Project"
                 title="Helping Hands"
                 summary="The increasing crime rate and the unpredictable nature of daily routines have led to a growing concern for personal safety, particularly for individuals living alone or away from their families. To address this issue, Helping Hands is a mobile application designed to connect users with strangers who are willing to provide assistance in times of need. The application offers various features to ensure user safety and enable mutual support among community members."
                 img={proj1}
                 link="https://github.com/malayvp28/HelpingHands"
                 github="https://github.com/malayvp28/HelpingHands"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Data Tool"
+                title=""
+                img={proj8}
+                link="https://github.com/dev7878/Forex-Trading-Signal-Generator"
+                github="https://github.com/dev7878/Forex-Trading-Signal-Generator"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
