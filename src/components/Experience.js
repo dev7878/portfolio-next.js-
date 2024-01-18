@@ -89,12 +89,12 @@ const Experience = () => {
             />
 
             <Details
-              position="Software Developer Intern"
+              position="Data Analytics Intern"
               company="Manpasand Beverages"
               // companyLink="https://amazon.com"
               time="Summer 2021"
               address="Vadodara, IN"
-              work="Worked on a team responsible for developing E-Commerce app, including implementing online store for products, supported in back-end development for payments and knowledge transfer to business team."
+              work="Leveraged Python, SQL, and Power BI for insightful e-commerce data analysis, streamlined data accuracy for enhanced decision-making, and innovated in data visualization, significantly boosting platform efficiency and operational strategies."
             />
 
             <Details
