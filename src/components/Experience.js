@@ -1,10 +1,6 @@
 import React, { useRef } from "react";
-import {
-  motion,
-  useScroll,
-} from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
-
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
@@ -39,7 +35,6 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 };
 
 const Experience = () => {
-
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -48,75 +43,75 @@ const Experience = () => {
   });
 
   return (
+    <div className="my-64">
+      <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">
+        Experience
+      </h2>
 
-      <div className="my-64">
-        <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">
-          Experience
-        </h2>
-
-        <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
-          <motion.div
-            className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
+      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
+        <motion.div
+          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
             origin-top  dark:bg-primaryDark dark:shadow-3xl"
-            style={{ scaleY: scrollYProgress }}
-          />
+          style={{ scaleY: scrollYProgress }}
+        />
+        <Details
+          position="DevOps Intern"
+          company="Savi Finance"
+          time="January 2024"
+          address=" Remote"
+          work="Managed Vault for secure developer secrets handling, improved system security by 30%, deployed backend infrastructure integrating Vault with Kubernetes reducing deployment times by 25% and increasing efficiency by 20%, and authored documentation boosting team productivity by 40% and collaboration by 50%."
+        />
+
+        <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-2">
           <Details
-              position="Project Manager"
-              company="Self Justice"
-              time="December 2023"
-              address=" Remote"
-              work="Successfully led a web application project at Self Justice, streamlining development with tailored two-week cycles, directing a team of 7, and enhancing productivity through effective scrum sessions and individual mentorship."
-            />
+            position="Software Developer"
+            company="SignAgent"
+            add
+            time="Fall 2023"
+            address="Burlington,ON - Remote"
+            work="Worked on a team responsible for developing new features for SignAgent's Architecture platform, including creation of new features, optimizations and bug fixes."
+          />
 
-          <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-2">
-            <Details
-              position="Software Developer Co-op"
-              company="SignAgent"add
-              time="Fall 2023"
-              address="Burlington,ON - Remote"
-              work="Worked on a team responsible for developing new features for SignAgent's Architecture platform, including creation of new features, optimizations and bug fixes."
-            />
-
-            <Details
-              position="Software Developer Intern"
-              company="Brandon Consulting"
-              // companyLink="https://facebook.com"
-              time="Summer 2022"
-              address="Remote"
-              work="Worked on a team responsible for developing a new job posting web app.
+          <Details
+            position="Software Developer Intern"
+            company="Brandon Consulting"
+            // companyLink="https://facebook.com"
+            time="Summer 2022"
+            address="Remote"
+            work="Worked on a team responsible for developing a new job posting web app.
                that allowed clients to apply to new jobs and employers to post jobs, including designing and implementing a  user interface
               and developing the backend infrastructure to support the feature."
-            />
+          />
 
-            <Details
-              position="Data Analytics Intern"
-              company="Manpasand Beverages"
-              // companyLink="https://amazon.com"
-              time="Summer 2021"
-              address="Vadodara, IN"
-              work="Leveraged Python, SQL, and Power BI for insightful e-commerce data analysis, streamlined data accuracy for enhanced decision-making, and innovated in data visualization, significantly boosting platform efficiency and operational strategies."
-            />
+          <Details
+            position="Data Analyst Intern"
+            company="Manpasand Beverages"
+            // companyLink="https://amazon.com"
+            time="Summer 2021"
+            address="Vadodara, IN"
+            work="Leveraged Python, SQL, and Power BI for insightful e-commerce data analysis, streamlined data accuracy for enhanced decision-making, and innovated in data visualization, significantly boosting platform efficiency and operational strategies."
+          />
 
-            <Details
-              position="Web Co-ordinator"
-              company="Wilfrid Laurier University"
-              time="March 2022 - present"
-              address="Waterloo, ON"
-              work="Led a dynamic team of student developers in maintaining and enhancing university websites for various research institutes. Spearheaded initiatives to ensure the continuous functionality and up-to-date content of these websites, contributing to a seamless online presence for the university."
-            />
+          <Details
+            position="Web Co-ordinator"
+            company="Wilfrid Laurier University"
+            time="March 2022 - present"
+            address="Waterloo, ON"
+            work="Led a dynamic team of student developers in maintaining and enhancing university websites for various research institutes. Spearheaded initiatives to ensure the continuous functionality and up-to-date content of these websites, contributing to a seamless online presence for the university."
+          />
 
-            <Details
-              position="Teaching Assistant"
-              company="Wilfrid Laurier University"
-              // companyLink="https://mit.edu"
-              time="September 2022 - Present"
-              address="Waterloo, ON"
-              work="Assisted in teaching  courses on intro computer programming, Data Structures and Algorithms, OOPS concepts and physics "
-            />
-          </ul>
-        </div>
-        </div>
-    );
+          <Details
+            position="Teaching Assistant"
+            company="Wilfrid Laurier University"
+            // companyLink="https://mit.edu"
+            time="September 2022 - Present"
+            address="Waterloo, ON"
+            work="Assisted in teaching  courses on intro computer programming, Data Structures and Algorithms, OOPS concepts and physics "
+          />
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Experience;

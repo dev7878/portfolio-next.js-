@@ -39,9 +39,12 @@ export default function About() {
     <>
       <Head>
         <title>Minimal Portfolio Built with Nextjs | About Page</title>
-        <meta name="description" content="Learn more about CodeBucks, a Next.js developer with a passion for 
+        <meta
+          name="description"
+          content="Learn more about CodeBucks, a Next.js developer with a passion for 
         creating innovative solutions. Discover tips for building a developer portfolio and insights on 
-        full-stack development, front-end development, and back-end development." />
+        full-stack development, front-end development, and back-end development."
+        />
       </Head>
       <TransitionEffect />
       <main
@@ -59,9 +62,10 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m <strong>Dev</strong>, a Full Stack developer with a passion for creating beautiful,
-                functional, and user-centered digital experiences. I am always looking for new and
-                innovative ways to solve problems.
+                Hi, I&apos;m <strong>Dev</strong>, a Full Stack developer with a
+                passion for creating beautiful, functional, and user-centered
+                digital experiences. I am always looking for new and innovative
+                ways to solve problems.
               </p>
               <p className="my-4 font-medium">
                 I believe that design is about more than just making things look
