@@ -62,22 +62,23 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m <strong>Dev</strong>, a Full Stack developer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. I am always looking for new and innovative
-                ways to solve problems.
+                Hi, I&apos;m <strong>Dev</strong>, a Full Stack Developer with a
+                passion for building seamless, functional, and user-centric
+                digital solutions. I thrive on finding innovative approaches to
+                problem-solving, ensuring that every project not only looks
+                great but also delivers an intuitive and engaging user
+                experience.
               </p>
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                For me, design goes beyond aesthetics—it&apos;s about crafting
+                solutions that address real needs while enhancing usability.
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                Whether I&apos;m working on a website, mobile app, or another
+                digital product, I approach each project with a focus on
+                technical excellence and user-first design. I&apos;m excited to
+                bring my skills and creativity to your next project, turning
+                ideas into impactful digital experiences.
               </p>
             </div>
             <div className="relative col-span-3 p-8 border-2 border-solid h-max rounded-2xl border-dark bg-light dark:border-light dark:bg-dark xl:col-span-4 md:col-span-8 md:order-1 ">

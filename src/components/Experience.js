@@ -55,39 +55,46 @@ const Experience = () => {
           style={{ scaleY: scrollYProgress }}
         />
         <Details
-          position="DevOps Intern"
+          position="Network Engineer Intern"
+          company="Toronto Stock Exchange"
+          time="Summer 2024"
+          address="Toronto, ON"
+          work="Developed automated report generation systems and data pipelines, improving network monitoring and increasing throughput by 30%. Deployed Docker containers for scaling, enhancing operational stability.
+        "
+        />
+        <Details
+          position="Cloud DevOps Intern"
           company="Savi Finance"
-          time="January 2024"
+          time="Winter 2024"
           address=" Remote"
-          work="Managed Vault for secure developer secrets handling, improved system security by 30%, deployed backend infrastructure integrating Vault with Kubernetes reducing deployment times by 25% and increasing efficiency by 20%, and authored documentation boosting team productivity by 40% and collaboration by 50%."
+          work="Engineered a cloud vault solution for API key and AWS secrets management, improving system security and deployment efficiency by 25%. Documented processes to enhance cross-team collaboration."
         />
 
         <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-2">
           <Details
-            position="Software Developer"
+            position="Full Stack Software Developer"
             company="SignAgent"
-            add
             time="Fall 2023"
-            address="Burlington,ON - Remote"
-            work="Worked on a team responsible for developing new features for SignAgent's Architecture platform, including creation of new features, optimizations and bug fixes."
+            address="Burlington,ON"
+            work="Full Stack Software Developer Intern | September 2023 – December 2023
+Integrated Stripe API with Django/Vue.js, boosting payment processing speed by 33%. Optimized system performance, enhancing responsiveness and user experience."
           />
 
           <Details
             position="Software Developer Intern"
             company="Brandon Consulting"
             // companyLink="https://facebook.com"
-            time="Summer 2022"
+            time="Summer 2023"
             address="Remote"
-            work="Worked on a team responsible for developing a new job posting web app.
-               that allowed clients to apply to new jobs and employers to post jobs, including designing and implementing a  user interface
-              and developing the backend infrastructure to support the feature."
+            work="Software Developer Intern | May 2023 – September 2023
+            Developed a job posting web app with ReactJS, Python, and MongoDB, increasing user engagement by 50%. Enhanced backend performance and scalability through infrastructure optimization."
           />
 
           <Details
-            position="Data Analyst Intern"
+            position="Data Analytics Intern"
             company="Manpasand Beverages"
             // companyLink="https://amazon.com"
-            time="Summer 2021"
+            time="Summer 2022"
             address="Vadodara, IN"
             work="Leveraged Python, SQL, and Power BI for insightful e-commerce data analysis, streamlined data accuracy for enhanced decision-making, and innovated in data visualization, significantly boosting platform efficiency and operational strategies."
           />

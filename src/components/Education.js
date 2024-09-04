@@ -15,7 +15,9 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="text-2xl font-bold capitalize sm:text-xl xs:text-lg">{type}</h3>
+        <h3 className="text-2xl font-bold capitalize sm:text-xl xs:text-lg">
+          {type}
+        </h3>
         <span className="font-medium capitalize text-dark/75 dark:text-light/50 xs:text-sm">
           {time} | {place}
         </span>
@@ -35,7 +37,9 @@ const Education = () => {
 
   return (
     <div className="my-64">
-      <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">Education</h2>
+      <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">
+        Education
+      </h2>
 
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
@@ -44,24 +48,47 @@ const Education = () => {
         />
         <ul className="flex flex-col items-start justify-between w-full ml-4">
           <Details
-            type="Bachelor of Science in Computer Science"
+            type="Bachelor of Science in Computer Science (Co-op)"
             time="2021-2025"
             place="Wilfrid Laurier University"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
           />
 
           <Details
-            type="Online Coursework"
-            time="2022-2023"
-            place="Udemy"
-            info="Full Stack Web-Developement."
-
+            type="Certification"
+            place="AWS"
+            info="AWS Cloud Practitioner"
           />
+
           <Details
-          type="Online Coursework"
-          time="2022"
-          place="edx"
-          info="Harvard CS50 intro to programming"/>
+            type="Certification"
+            place="Microsoft"
+            info="Azure AI Fundamentals"
+          />
+
+          <Details
+            type="Certification"
+            place="IBM"
+            info="Python for Data Science"
+          />
+
+          <Details
+            type="Online Coursework"
+            place="edX"
+            info="Harvard CS50 Intro to Programming"
+          />
+
+          <Details
+            type="Online Coursework"
+            place="LinkedIn"
+            info="Algorithmic Trading and Stock Essentials"
+          />
+
+          <Details
+            type="Online Coursework"
+            place="Udemy"
+            info="Fixed Income Securities"
+          />
         </ul>
       </div>
     </div>
